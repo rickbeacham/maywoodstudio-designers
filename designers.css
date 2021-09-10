@@ -1,0 +1,199 @@
+
+#full-width {
+  width: 100%;
+}
+#flex-container-designers {
+  display: flex;
+  flex-direction: row;
+}
+#flex-container-designers .figcaption-text {
+  text-align: center; 
+  font-size: .75rem;
+  color: #3d3066;
+  margin: .5rem auto;
+  padding: 0 2rem 0 2rem;
+}
+
+#image-designers {
+  margin: 30px 30px;
+  border-radius: 2%;
+  margin-bottom: 0px;
+  float: left; 
+  display: block; 
+  height: auto; 
+  width: 100%;
+  max-width: 300px;
+  max-height: 400px;
+}
+#title-designers {
+  margin: 30px;
+  color:#3e3166;
+  font-size: 1.2em;
+  text-decoration:underline;
+  text-transform: uppercase;
+}
+#desc-designers {
+  margin-top: 27px;
+  margin-right: 30px;
+  text-align: justify;
+}
+#container-reduced-items img {
+width: 100%; /* need to overwrite inline dimensions */
+height: auto;
+}
+.button-designers {
+background-color: #3e3166; /* Green */
+border: 1px solid transparent;
+border-radius: .25rem;
+color: white;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+/*display: inline-block;*/
+font-size: 16px;
+margin: 10px 10px 0px 0px;
+cursor: pointer;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+text-transform: none;
+ width: 200px;
+ float: left;
+}
+.button-designers:hover {
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+#spanner {
+font-size:x-large;
+font-family: 'Times New Roman', Times, serif;
+color: #3d3066;
+}
+#grid-container-designers {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+grid-gap: 28px;
+border-radius: 2px;
+margin-left: 30px;
+margin-right:30px;
+}
+/* hover styles */
+#container-reduced-items .reduced-listing {
+position: relative;
+background-color: #f2f2f2;
+content-visibility: auto;
+contain-intrinsic-size: 1px 1000px;
+border: 2px solid white;
+border-radius: 8px;
+background: url(https://maywoodstudio.com/skin/frontend/rwd/maywood/images/bck-gray-flowers.png) repeat #e2e1b3;
+}
+#container-reduced-items .reduced-image {
+line-height: 0;
+
+}
+#container-reduced-items .reduced-category {
+top: 28px;
+font-size: 1.3em;
+text-decoration: underline;
+background:initial;
+}
+#container-reduced-items .reduced-listing:hover .reduced-title {
+opacity: 1;
+}
+#video-title {
+margin: 5px;
+padding: 5px;
+border-top: none;
+text-align: center;
+position: inherit;
+color:#3d3066;
+font-size: inherit;
+}
+.std #container-reduced-items #grid-container-designers .video-desc {
+margin: 0px;
+padding:10px;
+padding-top:3px;
+}
+.std #container-reduced-items #grid-container-designers .video-link {
+margin: 0px;
+font-weight: bold;
+font-size: 1.1em;
+padding:10px;
+color: #3e3166;
+}
+.std #container-reduced-items #grid-container-designers .video-link-text {
+color: #3e3166;
+}
+
+.zooom {
+transition: transform .2s; /* Animation */
+text-size-adjust: 1.1em;
+}
+.zooom:hover {
+transform: scale(1.04) translateZ(0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+-webkit-font-smoothing: subpixel-antialiased;
+-moz-osx-font-smoothing: subpixel-antialiased;
+backface-visibility: hidden;
+}
+.page .main-container.col1-layout .main .col-main .page-title h1 {
+margin-left: 30px;
+}
+
+/* for touch screen devices */
+@media (max-width: 764px) {
+#grid-container-designers {
+  display: flex; 
+  flex-direction: column; 
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+#flex-container-designers {
+  display: flex;
+  flex-direction: column;
+}
+#image-designers {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #3d3066;
+}
+#desc-designers {
+  margin-top: 23px;
+  margin-right: auto;
+  margin-bottom: auto;
+} 
+#container-reduced-items .reduced-listing {
+    margin-bottom: 30px;
+    width: auto;
+    max-width: 365px;
+    align-self: center;
+  }
+#title-designers {
+  text-align: center;
+}
+.button-designers {
+  margin: 15px 0px 0px 0px;
+  width: -webkit-fill-available;
+}
+.page .main-container.col1-layout .main .col-main .page-title h1 {
+margin-left: auto;
+}
+
+}
+@media (max-width: 780px){
+  #button-designers {
+    width: -webkit-fill-available;
+    display: block;
+  }
+}
+
+/* Galaxy Touch Screens */
+@media (max-width: 280px) {
+  #image-designers {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+}
